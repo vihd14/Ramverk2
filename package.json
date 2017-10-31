@@ -1,0 +1,19 @@
+{
+  "name": "redovisa-me",
+  "version": "1.0.1",
+  "description": "Me page for Viza",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vihd14/Ramverk2.git"
+  },
+  "author": "Viktoria Haapaoja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vihd14/Ramverk2/issues"
+  },
+  "homepage": "https://github.com/vihd14/Ramverk2#readme"
+}
