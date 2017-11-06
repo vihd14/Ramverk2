@@ -17,19 +17,22 @@ if (app.get('env') === 'development') {
 // Add a route
 app.get("/", (req, res) => {
     res.render("home", {
-        title: "Home - Viza"
+        title: "Home - Viza",
+        urlPath: req.path
     });
 });
 
 app.get("/about", (req, res) => {
     res.render("about", {
-        title: "About - Viza"
+        title: "About - Viza",
+        urlPath: req.path
     });
 });
 
 app.get("/report", (req, res) => {
     res.render("report", {
-        title: "Report - Viza"
+        title: "Report - Viza",
+        urlPath: req.path
     });
 });
 
