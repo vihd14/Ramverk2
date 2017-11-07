@@ -1,6 +1,6 @@
 {
   "name": "redovisa-me",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Me page for Viza",
   "main": "index.js",
   "scripts": {
