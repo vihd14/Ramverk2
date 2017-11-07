@@ -63,11 +63,11 @@ ul li {
     margin: 10px;
     font-size: 30px;
     color: black;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .site-navbar a:visited {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .site-navbar a:hover {
@@ -96,6 +96,10 @@ ul li {
     max-width: 20em;
     float: right;
     margin-left: 10px;
+}
+
+.figcenter {
+    margin: auto;
 }
 
 .main a {
