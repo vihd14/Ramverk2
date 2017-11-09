@@ -1,0 +1,37 @@
+version: "2"
+services:
+    node80:
+        image: "node:8"
+        user: "node"
+        working_dir: /home/node/app
+        environment:
+            - NODE_ENV=production
+        volumes:
+            - ./:/home/node/app
+        expose:
+            - "8080"
+        command: "npm start"
+
+    node70:
+        image: "node:7"
+        user: "node"
+        working_dir: /home/node/app
+        environment:
+            - NODE_ENV=production
+        volumes:
+            - ./:/home/node/app
+        expose:
+            - "8070"
+        command: "npm start"
+
+    node60:
+        image: "node:6"
+        user: "node"
+        working_dir: /home/node/app
+        environment:
+          - NODE_ENV=production
+        volumes:
+          - ./:/home/node/app
+        expose:
+          - "8060"
+        command: "npm start"
