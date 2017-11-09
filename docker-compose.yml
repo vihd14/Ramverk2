@@ -1,37 +1,40 @@
-version: "2"
+version: "3"
 services:
-    node80:
+    node8:
         image: "node:8"
         user: "node"
         working_dir: /home/node/app
         environment:
             - NODE_ENV=production
+            - PORT=8008
+        ports:
+            - "8008:8008"
         volumes:
             - ./:/home/node/app
-        expose:
-            - "8080"
         command: "npm start"
 
-    node70:
+    node7:
         image: "node:7"
         user: "node"
         working_dir: /home/node/app
         environment:
             - NODE_ENV=production
+            - PORT=8007
+        ports:
+            - "8007:8007"
         volumes:
             - ./:/home/node/app
-        expose:
-            - "8070"
         command: "npm start"
 
-    node60:
+    node6:
         image: "node:6"
         user: "node"
         working_dir: /home/node/app
         environment:
-          - NODE_ENV=production
+            - NODE_ENV=production
+            - PORT=8006
+        ports:
+            - "8006:8006"
         volumes:
-          - ./:/home/node/app
-        expose:
-          - "8060"
+            - ./:/home/node/app
         command: "npm start"
