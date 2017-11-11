@@ -8,7 +8,7 @@
 1. Se till att `docker pull node` är gjort, så imagen node finns tillgänglig.
 2. Kör `docker-compose up -d` för att starta containers för node 6, 7 och 8.
 3. Kör `docker container ls` för att se att de rullar.
-4. Gå in i webbläsaren och skriv in `din-ip-adress:port` eller `localhost:port`. Portarna som finns är:
+4. Gå in i webbläsaren och skriv in `localhost:port`. Portarna som finns är:
     * 8008
     * 8007
     * 8006
