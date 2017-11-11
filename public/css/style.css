@@ -96,6 +96,10 @@ img[src$="figcenter"] {
     margin: auto;
 }
 
+code {
+    background-color: #f1f1f1;
+}
+
 .main a {
     text-decoration: none;
 }
