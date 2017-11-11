@@ -2,79 +2,76 @@ extend layout.pug
 
 block main
     .main
-        h1 Redovisningar
-        h2 Kmom01
-        h3 Berätta utförligt om din syn på Express och Pug och hur de samverkar. Relatera till andra ramverk du jobbat med. Lyft fram de fördelar och eventuellt nackdelar du finner, eller bara notera skillnader och likheter.
-        p
-            | Express och pug har jag aldrig arbetat med förr så det var kul att dyka in i ett nytt ramverk, speciellt
-            | ett ramverk som används av relativt många (och inte endast Mos egna ramverk Anax, förlåt Mos). Dock
-            | har jag arbetat med Mithril under vårterminen, som jag tycker liknar Express på några plan. Efter att
-            | ha arbetat med detta i ca en vecka känns syntaxen hyfsat enkel att förstå, då den som sagt liknar Mithril
-            | till viss del. Att man på en gång får en grundstruktur genererad kändes skönt så man slapp börja direkt
-            | från grunden. En väldigt snabb och smidig struktur att börja använda, därav namnet Express gissar jag på.
-            br
-            br
-            | Pug däremot har jag redan en hat-kärlek till. Syntaxen är enkel men det här med att använda "|" när linjerna
-            | blir för långa... Jag saknar gamla goa HTML redan men det är väl en sådan sak som man vänjer sig vid.
-            | Jag hade en del problem när jag ville fixa en "aktiv navbar" och inte hade den blekaste aning om hur jag
-            | skulle göra detta i pug. Lite hjälp av stackoverflow fick mig på rätt bana, även om det var lite struktureringsfel
-            | i kodexemplet jag hittade.
-        h3 Berätta om din katalogstruktur och hur du organiserade din kod, hur tänkte du?
-        p
-            | Jag autogenererade en app för att enkelt få ett "skal" av ett ramverk att jobba vidare på enligt exemplet
-            | vi fick från övningen. Sedan lade jag till alla vyer som behövdes samt finslipade designen (som man gör).
-            | En layoutfil sköter genereringen av sidans layout på alla undesidor, ungefär så som det fungerade i webapp
-            | och Mithril. Det känns smidigast och mest DRY att ha det så.
-            br
-            br
-            | Sedan är det i index.js som allt körs igång, såsom i exemplet med några modifieringar.
-        h3 Använde du någon form av scaffolding som Express erbjuder?
-        p
-            | Ja som jag sa tidigare autogenereade jag en färdig grund så jag slapp bygga allt från scratch igen.
-        h3 Jobbar du med Markdown för innehållet, eller annat liknande?
-        p
-            | Nej det gör jag inte, Markdown är inte riktigt min grej för tillfället men det kan hända att jag byter mig
-            | dit ifall jag blir galen på pug.
+        :markdown-it(linkify langPrefix='highlight-')
+            # Redovisningar
+            ## Kmom01
+            ### Berätta utförligt om din syn på Express och Pug och hur de samverkar. Relatera till andra ramverk du jobbat med. Lyft fram de
+            fördelar och eventuellt nackdelar du finner, eller bara notera skillnader och likheter.
+            Express och pug har jag aldrig arbetat med förr så det var kul att dyka in i ett nytt ramverk, speciellt
+            ett ramverk som används av relativt många (och inte endast Mos egna ramverk Anax, förlåt Mos). Dock
+            har jag arbetat med Mithril under vårterminen, som jag tycker liknar Express på några plan. Efter att
+            ha arbetat med detta i ca en vecka känns syntaxen hyfsat enkel att förstå, då den som sagt liknar Mithril
+            till viss del. Att man på en gång får en grundstruktur genererad kändes skönt så man slapp börja direkt
+            från grunden. En väldigt snabb och smidig struktur att börja använda, därav namnet Express gissar jag på.
 
-        h2 Kmom02
-        h3 Har du jobbat med Docker eller andra virtualiseringstekniker innan?
-        p
-            | Jag har inte jobbat med docker innan, dock Virtual Box när vi hade en kurs i Linux för att skapa
-            | en virtuell linuxmaskin. Jag känner mig inte helt bekväm med docker ännu men det borde kännas
-            | bättre efter nästa kursmoment när man har arbetat lite mer med det. Det blir att läsa dokumentationen
-            | ännu fler gånger så man blir riktigt haj på detta.
-        h3 Hur ser du på möjligheterna att använda dig av Docker för att jobba med tester av ditt repo?
-        p
-            | Genom att köra olika containers med olika versioner av t.ex. Node kan man se så att repot fungerar på
-            | olika versioner istället för bara den senaste. En annan sak jag tänkt på är att man med Docker kan testa
-            | samma repo på olika maskiner utan att behöva installera om miljön. Det betyder att jag kan testa mitt
-            | repo utan problem på t.ex. en MacBook eller en linuxmaskin. Sedan finns det säkert massor av saker man kan göra
-            | med hjälp av Docker men jag känner mig som sagt inte helt bekväm med systemet ännu för att säga mer
-            | om ämnet. Detta kommer dock upp i nästa kursmoment så jag ser fram emot att se vad man mer kan göra.
-        h3 Gick allt smidigt eller stötte du på problem?
-        p
-            | Jag stötte på en del problem när jag körde igenom övningen samt när jag gjorde uppgiften. Först fick jag
-            | inte curl localhost:port att fungera och efter att ha googlat runt löste jag det genom att skriva in maskinens
-            | ip-adress istället för localhost. Sedan gick övningen bra att köra igenom. I uppgiften gick allt bra tills
-            | jag skulle testa koppla tre node-containers till min redovisningssida. Sidan laddades inte och det kändes
-            | som jag testade allt innan jag upptäckte att jag hade citationstecken på ett ställe där de inte skulle vara.
-            | Sådana små, irriterande saker gör en galen ibland. Men sedan fungerade sidan på alla tre portar i alla fall.
-            |
-        h3 Skapade du din egen image, berätta om den?
-        p
-            | Nej det gjorde jag inte.
+            Pug däremot har jag redan en hat-kärlek till. Syntaxen är enkel men det här med att använda "|" när linjerna
+            blir för långa... Jag saknar gamla goa HTML redan men det är väl en sådan sak som man vänjer sig vid.
+            Jag hade en del problem när jag ville fixa en "aktiv navbar" och inte hade den blekaste aning om hur jag
+            skulle göra detta i pug. Lite hjälp av stackoverflow fick mig på rätt bana, även om det var lite struktureringsfel
+            i kodexemplet jag hittade.
 
-        h2 Kmom03
-        p Redovisningstext kommer inom kort...
+            ### Berätta om din katalogstruktur och hur du organiserade din kod, hur tänkte du?
+            Jag autogenererade en app för att enkelt få ett "skal" av ett ramverk att jobba vidare på enligt exemplet
+            vi fick från övningen. Sedan lade jag till alla vyer som behövdes samt finslipade designen (som man gör).
+            En layoutfil sköter genereringen av sidans layout på alla undesidor, ungefär så som det fungerade i webapp
+            och Mithril. Det känns smidigast och mest DRY att ha det så.
 
-        h2 Kmom04
-        p Redovisningstext kommer inom kort...
+            Sedan är det i index.js som allt körs igång, såsom i exemplet med några modifieringar.
 
-        h2 Kmom05
-        p Redovisningstext kommer inom kort...
+            ### Använde du någon form av scaffolding som Express erbjuder?
+            Ja som jag sa tidigare autogenereade jag en färdig grund så jag slapp bygga allt från scratch igen.
 
-        h2 Kmom06
-        p Redovisningstext kommer inom kort...
+            ### Jobbar du med Markdown för innehållet, eller annat liknande?
+            Nej det gör jag inte, Markdown är inte riktigt min grej för tillfället men det kan hända att jag byter mig
+            dit ifall jag blir galen på pug.
 
-        h2 Kmom07/10
-        p Redovisningstext kommer inom kort...
+            ## Kmom02
+            ### Har du jobbat med Docker eller andra virtualiseringstekniker innan?
+            Jag har inte jobbat med docker innan, dock Virtual Box när vi hade en kurs i Linux för att skapa
+            en virtuell linuxmaskin. Jag känner mig inte helt bekväm med docker ännu men det borde kännas
+            bättre efter nästa kursmoment när man har arbetat lite mer med det. Det blir att läsa dokumentationen
+            ännu fler gånger så man blir riktigt haj på detta.
+
+            ### Hur ser du på möjligheterna att använda dig av Docker för att jobba med tester av ditt repo?
+            Genom att köra olika containers med olika versioner av t.ex. Node kan man se så att repot fungerar på
+            olika versioner istället för bara den senaste. En annan sak jag tänkt på är att man med Docker kan testa
+            samma repo på olika maskiner utan att behöva installera om miljön. Det betyder att jag kan testa mitt
+            repo utan problem på t.ex. en MacBook eller en linuxmaskin. Sedan finns det säkert massor av saker man kan göra
+            med hjälp av Docker men jag känner mig som sagt inte helt bekväm med systemet ännu för att säga mer
+            om ämnet. Detta kommer dock upp i nästa kursmoment så jag ser fram emot att se vad man mer kan göra.
+
+            ### Gick allt smidigt eller stötte du på problem?
+            Jag stötte på en del problem när jag körde igenom övningen samt när jag gjorde uppgiften. Först fick jag
+            inte curl localhost:port att fungera och efter att ha googlat runt löste jag det genom att skriva in maskinens
+            ip-adress istället för localhost. Sedan gick övningen bra att köra igenom. I uppgiften gick allt bra tills
+            jag skulle testa koppla tre node-containers till min redovisningssida. Sidan laddades inte och det kändes
+            som jag testade allt innan jag upptäckte att jag hade citationstecken på ett ställe där de inte skulle vara.
+            Sådana små, irriterande saker gör en galen ibland. Men sedan fungerade sidan på alla tre portar i alla fall.
+
+            ### Skapade du din egen image, berätta om den?
+            Nej det gjorde jag inte.
+
+            ## Kmom03
+            Redovisningstext kommer inom kort...
+
+            ## Kmom04
+            Redovisningstext kommer inom kort...
+
+            ## Kmom05
+            Redovisningstext kommer inom kort...
+
+            ## Kmom06
+            Redovisningstext kommer inom kort...
+
+            ## Kmom07/10
+            Redovisningstext kommer inom kort...
