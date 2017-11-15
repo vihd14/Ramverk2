@@ -4,6 +4,12 @@
 # Ramverk2
 ## Course repo for Ramverk2
 
+### Me-sida
+1. Klona mitt repo via `git clone https://github.com/vihd14/Ramverk2`
+2. Kör `npm install` för att ladda ned alla paket.
+3. Starta servern med `npm start` alternativt `./restart.bat` om du sitter på en Windowsmaskin där processen
+`node.exe` inte tas bort automatiskt.
+
 ### Docker
 **Förutsatt att du har docker och vet hur det används**
 1. Se till att `docker pull node` är gjort, så imagen node finns tillgänglig.
