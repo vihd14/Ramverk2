@@ -7,7 +7,7 @@
     "test": "nyc --reporter=html --reporter=text mocha 'test/**/*.js'",
     "start": "node index.js",
     "eslint": "eslint",
-    "posttest": "npm run eslint",
+    "posttest": "npm run eslint"
   },
   "repository": {
     "type": "git",
