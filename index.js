@@ -5,7 +5,8 @@
 var express = require("express");
 var app = express();
 const path = require("path");
-const DBWEBB_PORT = process.env.DBWEBB_PORT || process.env.PORT || 1337;
+const DBWEBB_PORT = process.env.DBWEBB_PORT || process.env.LOCAL_DEV_PORT ||
+process.env.PORT || 1337;
 
 // Use app as template engine
 app.set('view engine', 'pug');

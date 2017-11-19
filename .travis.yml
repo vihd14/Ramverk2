@@ -7,9 +7,6 @@ node_js:
 
 sudo: false
 
-notifications:
-  email: false
-
 git:
     submodules: false
 
@@ -18,3 +15,10 @@ before_script:
 
 script:
     - make test
+
+after_success:
+    - npm run report-coveralls
+    - npm run report-codecov
+
+notifications:
+    email: false
