@@ -4,3 +4,5 @@ node_modules/
 build/
 cache/
 npm-debug.log
+coverage/
+.nyc_output
