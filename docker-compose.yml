@@ -11,7 +11,7 @@ services:
             - "8008:8008"
         volumes:
             - ./:/home/node/app
-        command: "npm start"
+        command: bash -c "make test"
 
     node7:
         image: "node:7"
@@ -24,7 +24,7 @@ services:
             - "8007:8007"
         volumes:
             - ./:/home/node/app
-        command: "npm start"
+        command: bash -c "make test"
 
     node6:
         image: "node:6"
@@ -37,4 +37,4 @@ services:
             - "8006:8006"
         volumes:
             - ./:/home/node/app
-        command: "npm start"
+        command: bash -c "make test"

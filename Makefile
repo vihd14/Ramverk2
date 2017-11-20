@@ -127,6 +127,30 @@ test: htmlhint stylelint eslint jsunittest
 
 
 
+# target: test1				- Run test1
+.PHONY: test1
+test1:
+	@$(call HELPTEXT,$@)
+	[ ! -f docker-compose.yml ] || docker-compose run node8
+
+
+
+# target: test2				- Run test2
+.PHONY: test2
+test2:
+	@$(call HELPTEXT,$@)
+	[ ! -f docker-compose.yml ] || docker-compose run node7
+
+
+
+# target: test3				- Run test3
+.PHONY: test3
+test3:
+	@$(call HELPTEXT,$@)
+	[ ! -f docker-compose.yml ] || docker-compose run node6
+
+
+
 # target: doc                - Generate documentation.
 .PHONY: doc
 doc:
