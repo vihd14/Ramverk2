@@ -1,40 +1,46 @@
 version: "3"
 services:
     node8:
-        image: "node:8"
         user: "node"
-        working_dir: /home/node/app
         environment:
             - NODE_ENV=production
             - PORT=8008
         ports:
             - "8008:8008"
+        build:
+            context: .
+            dockerfile: docker/Dockerfile-node8-alpine
         volumes:
-            - ./:/home/node/app
+            - ./:/app/
+            - /app/node_modules/
         command: bash -c "make test"
 
     node7:
-        image: "node:7"
         user: "node"
-        working_dir: /home/node/app
         environment:
             - NODE_ENV=production
             - PORT=8007
         ports:
             - "8007:8007"
+        build:
+            context: .
+            dockerfile: docker/Dockerfile-node7-alpine
         volumes:
-            - ./:/home/node/app
+            - ./:/app/
+            - /app/node_modules/
         command: bash -c "make test"
 
     node6:
-        image: "node:6"
         user: "node"
-        working_dir: /home/node/app
         environment:
             - NODE_ENV=production
             - PORT=8006
         ports:
             - "8006:8006"
+        build:
+            context: .
+            dockerfile: docker/Dockerfile-node6-alpine
         volumes:
-            - ./:/home/node/app
+            - ./:/app/
+            - /app/node_modules/
         command: bash -c "make test"

@@ -34,6 +34,7 @@
     "javascript-style-guide": "^0.9.10",
     "js-yaml": "^3.10.0",
     "jsonlint": "^1.6.2",
+    "minimatch": "^3.0.4",
     "mocha": "^4.0.1",
     "nyc": "^11.3.0",
     "stylelint": "^8.2.0",

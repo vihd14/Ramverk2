@@ -38,6 +38,8 @@ CHECK_VERSION = printf "%-15s %-10s %s\n" "`basename $(1)`" "`$(1) --version $(2
 #
 # Specifics
 #
+D		   := docker
+DC		   := docker-compose
 BIN        := .bin
 NODEMODBIN := node_modules/.bin
 
@@ -162,6 +164,9 @@ doc:
 .PHONY: build
 build: test doc #theme less-compile less-minify js-minify
 	@$(call HELPTEXT,$@)
+	$(DC) build --file docker/Dockerfile-node8-alpine
+	$(DC) build --file docker/Dockerfile-node7-alpine
+	$(DC) build --file docker/Dockerfile-node6-alpine
 
 
 
