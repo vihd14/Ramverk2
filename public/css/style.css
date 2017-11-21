@@ -111,6 +111,10 @@ code {
     padding-left: 0.8em;
 }
 
+.text-border {
+    border: solid 1px #f1f1f1
+}
+
 .main a.link {
     color: grey;
     text-decoration: none;

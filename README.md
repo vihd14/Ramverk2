@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/vihd14/Ramverk2.svg?branch=master)](https://travis-ci.org/vihd14/Ramverk2)
 [![BCH compliance](https://bettercodehub.com/edge/badge/vihd14/Ramverk2?branch=master)](https://bettercodehub.com/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d46ed0133ee46e7d59c1/maintainability)](https://codeclimate.com/github/vihd14/Ramverk2/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d46ed0133ee46e7d59c1/test_coverage)](https://codeclimate.com/github/vihd14/Ramverk2/test_coverage)
 # Ramverk2
 ## Course repo for Ramverk2
 
