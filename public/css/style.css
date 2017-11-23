@@ -107,12 +107,8 @@ code {
 .main blockquote {
     font-style: italic;
     color: #444;
-    border-left: solid 0.25em #f1f1f1;
+    border-left: solid 0.25em #bababa;
     padding-left: 0.8em;
-}
-
-.text-border {
-    border: solid 1px #f1f1f1
 }
 
 .main a.link {
