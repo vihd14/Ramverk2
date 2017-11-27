@@ -23,6 +23,13 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/app", (req, res) => {
+    res.render("app", {
+        title: "App - Viza",
+        urlPath: req.path
+    });
+});
+
 app.get("/about", (req, res) => {
     res.render("about", {
         title: "About - Viza",

@@ -68,6 +68,9 @@ block main
             *jag inte själv köra `make test*` i cygwin, då det inte klarar av att köra `docker-compose` men förhoppningsvis*
             *kan rättaren/den som testar repot köra detta på sin egen maskin.*
 
+            *När man kör npm test visas ett error; att jag inte har några tester att köra. Ja, det stämmer. Jag har inget*
+            *att testa ännu men det borde tillkomma i nästa kursmoment.*
+
             ***Se `README.md` för att ladda hem mitt repo samt för att se hur man kör Docker.***
 
             *Jag blev mer och mer irriterad på pugs syntax när man skulle skriva mycket text så hör och häpna: jag har*
@@ -77,6 +80,45 @@ block main
             *Fixade även en bug som fick sidan att krasha i tidigare kursmoment, då jag glömt köra*
             *`npm install jstransformer-markdown-it --save` för att lägga till Markdown när man kör `npm install`.*
             *Nu fungerar allt som det ska, med Markdown!*
+
+            ----------------------------------------------------------------------------------------------------
+
+            ### Berätta vilka tekniker/verktyg du valde för enhetstester och kodtäckning och varför?
+            Jag använder Mocha och Nyc som verktyg, alltså de som introducerades i övningen. De kändes bra
+            och eftersom det gicks igenom hur de fungerade i övningen föll valet på dem, helt enkelt. Sedan
+            använder jag travis, bettercodehub och codeclimate för kodtäckning/test. Alla verkar fungera bra!
+
+            ### Berätta om cin CI-kedja och reflektera över de valen du gjorde?
+            Som jag sade ovan använder jag travis och codeclimate, främst travis kikar jag på då jag gillar hur
+            man ser hur den kör `make test install` osv. Codeclimate är ju dock till för kodtäckningen och jag
+            tycker den fungerar bra och visar tydligt vad som ser bra ut och vad som kan förbättras.
+
+            ### Reflektera över hur det gick att integrera enhetstesterna i olika Docker-kontainerns och om du ser någon nytta med detta.
+            Det gick hyfsat enkelt, problemen jag stötte på beskrev jag högre upp. Det känns väldigt smidigt att kunna köra alla
+            tester på en gång med ett enkelt kommando.
+
+            ### Hur väl lyckades du utvärdera TDD-konceptet och vilka är dina reflektioner?
+            Jag har inte rikigt börjat med detta då jag ännu inte har några saker att testa. Dock gillar jag konceptet
+            och kommer absolut tänka enligt TDD när jag i nästa kursmoment ska börja testa saker.
+
+            ### Berätta om tankarna kring din klient/server applikation och nämn de tekniker du använder.
+            *Kopierat från min redovisasida under fliken "app":*
+
+            Min app, som jag döpt till RealTime Photos, kommer så småning om bli likt ett socialt media
+            där man kan dela sina bilder och följa andra användare. På så vis kommer man i sitt flöde se
+            bilder av de man följer samt sina egna bilder man laddar upp. Man kommer även kunna chatta
+            med varandra via direktmeddelanden, relativt likt Instagrams idé. Det ska även gå att söka
+            (via en databas) på sökord för att hitta bilder och användare på "Discover-sidan".
+
+            Just nu har jag inte inplementerar några speciella metoder (endast de som används i redovisasidan)
+            men jag tänkte gå tillbaka till Ramverk1-kursen och lägga till användare på ungefär samma sätt.
+            Mer än så har jag inte tänkt men det ska bli mycket intressant att komma på hur flödet ska se ut
+            och fungera samt att man kan följa andra användare. Sedan ska realtiden läggas till så man kan
+            skicka direktmeddelanden till varandra samt få upp bilder i flödet så fort något laddas upp.
+
+            Användarna kommer lagras i en databas, antagligen bilderna + beskrivning också. Jag funderar även på
+            detta med REST-API som vi använde i webapp-kursen. Som sagt, jag har en del att börja fundera över
+            men det känns som att det kan bli riktigt bra med hjälp av "gammalt" material.
 
             ## Kmom04
             Redovisningstext kommer inom kort...

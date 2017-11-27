@@ -1,0 +1,26 @@
+extend layout.pug
+
+block main
+    .main
+        :markdown-it(linkify langPrefix='highlight-')
+            # RealTime Photos
+
+            ![rtp](/img/rtp.png?style=figcenter)
+
+            Min app, som jag döpt till RealTime Photos, kommer så småning om bli likt ett socialt media
+            där man kan dela sina bilder och följa andra användare. På så vis kommer man i sitt flöde se
+            bilder av de man följer samt sina egna bilder man laddar upp. Man kommer även kunna chatta
+            med varandra via direktmeddelanden, relativt likt Instagrams idé. Det ska även gå att söka
+            (via en databas) på sökord för att hitta bilder och användare på "Discover-sidan".
+
+            Just nu har jag inte inplementerar några speciella metoder (endast de som används i redovisasidan)
+            men jag tänkte gå tillbaka till Ramverk1-kursen och lägga till användare på ungefär samma sätt.
+            Mer än så har jag inte tänkt men det ska bli mycket intressant att komma på hur flödet ska se ut
+            och fungera samt att man kan följa andra användare. Sedan ska realtiden läggas till så man kan
+            skicka direktmeddelanden till varandra samt få upp bilder i flödet så fort något laddas upp.
+
+            Användarna kommer lagras i en databas, antagligen bilderna + beskrivning också. Jag funderar även på
+            detta med REST-API som vi använde i webapp-kursen. Som sagt, jag har en del att börja fundera över
+            men det känns som att det kan bli riktigt bra med hjälp av "gammalt" material.
+
+            **Repot på GitHub hittas [här](https://github.com/vihd14/real-time-photos).**
